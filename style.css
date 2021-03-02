@@ -1,0 +1,153 @@
+body{
+    margin: 0;
+    background-color: #F2F9FB; 
+    font-family: 'Open Sans', sans-serif;
+}
+header{
+    width: 100%;
+    height: 75px;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow: 0px 0px 2px #555;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 100px
+}
+header > h1{
+    width: 150px;
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: -2px;
+    margin: 0;
+    background: linear-gradient(269deg,#0048ff,#0096ff),linear-gradient(#000,#000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+}
+header div{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+header img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+#live-div{
+    width: 80%;
+    height: 100%;
+    box-shadow: 0px 2px 10px inset #ccc;
+    position: relative
+}
+.live-text{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.8)
+}
+.live-text i{
+    font-size: 13px;
+    margin-left: 6px;
+    transition: 0.3s all ease;
+    color:rgba(255, 0, 0, 1);
+    animation: liveDotAnimation 1s alternate 0.5s infinite;
+}
+#screen-share{
+    width: 100%;
+    height: 100%;
+}
+#right-div{
+    width: 20%;
+    border-left: 1px solid lightgrey;
+}
+#video-live{
+    width: 100%;
+    height: 30vh;
+}
+#video-live img{
+    border-radius: 8px 8px 0px 0px ;
+}
+#main-message-container{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.dc-div{
+    width: 100%;
+    display: flex;
+}
+.dc-div div{
+    width: 50%;
+    text-align: center;
+    padding: 12px;
+    box-sizing: border-box;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+.dc-div div:hover{
+    box-shadow: 0px 2px 4px #ccc;
+}
+.message-div{
+    width: 100%;
+    background: coral;
+    box-sizing: border-box;
+    padding: 4px;
+    background: #fff;
+}
+.message-div input{
+    width: 70%;
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid lightgrey;
+    font-size: 16px;
+}
+.message-div button{
+    width: 20%;
+    height: 80%;
+    border: none;
+    background: rgb(1,143,255);
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 6px;
+    outline: none;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+}
+@keyframes liveDotAnimation{
+    0%{
+        opacity: 1; 
+    }
+    25%{
+        opacity: 0.75; 
+    }
+    50%{
+        opacity: 0.5;
+    }
+    75%{
+        opacity: 0.25;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
